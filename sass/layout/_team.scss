@@ -1,0 +1,78 @@
+.section {
+    background-color: var(--buttons-bg-color);
+}
+
+.team {
+
+    display: flex;
+    padding-left: 0;
+    margin-bottom: 0;
+    margin-top: 0;
+}
+
+.team__item {
+    background-color: var(--primary-bg-color);
+    box-shadow: 0px 1px 3px #00000033, 0px 1px 1px #00000024,
+        0px 2px 1px #0000001f;
+    border-radius: 0px 0px 4px 4px;
+
+
+}
+
+.team li+li {
+    margin-left: 30px;
+}
+
+.team__box {
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.team__title {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.19;
+    letter-spacing: 0.03em;
+    color: var(--primary-text-color);
+    margin-bottom: 10px;
+    margin-top: 0;
+    text-align: center;
+}
+
+.team__text {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.19;
+    letter-spacing: 0.03em;
+    color: var(--title-text-color);
+    text-align: center;
+    margin-bottom: 16px;
+}
+
+.social {
+    display: flex;
+    justify-content: center;
+}
+
+.social li+li {
+    margin-left: 10px;
+}
+
+.social__link {
+    display: flex;
+    justify-content: center;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    align-items: center;
+    fill: var(--social-color);
+
+    transition: fill var(--time-distribution), background-color var(--time-distribution);
+
+    &:hover,
+    &:focus {
+            background-color: #2196F3;
+            fill: var(--primary-bg-color);
+        }
+}
+

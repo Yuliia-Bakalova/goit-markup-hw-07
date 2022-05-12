@@ -1,7 +1,4 @@
-.section {
-    padding-top: 94px;
-    padding-bottom: 94px;
-}
+
 
 .section__title {
     font-weight: 700;
@@ -14,7 +11,7 @@
     text-align: center;
 }
 .section__title.section__title--hidden,
-.checkbox-input.hidden {
+.modal-checkbox__input.hidden {
     position: absolute;
     width: 1px;
     height: 1px;
@@ -25,4 +22,24 @@
     clip-path: inset(100%);
     clip: rect(0 0 0 0);
     overflow: hidden;
+}
+
+.hero__title {
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 1.36;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: var(--primary-bg-color);
+    width: 696px;
+    margin: 0 auto 30px auto;
+}
+.features__title {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: var(--primary-text-color);
+    margin-bottom: 10px;
 }

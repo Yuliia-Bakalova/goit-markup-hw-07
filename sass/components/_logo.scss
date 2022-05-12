@@ -1,0 +1,25 @@
+.logo {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.19;
+    color: var(--accent-color);
+    text-decoration: none;
+    cursor: default;
+}
+.studio {
+    color: var(--primary-text-color);
+}
+.logo.footer__logo {
+    display: block;
+    margin-bottom: 20px;
+}
+
+.logo-studio--white {
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.19;
+    letter-spacing: 0.03em;
+    color: var(--primary-bg-color);
+
+}

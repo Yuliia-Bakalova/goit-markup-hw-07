@@ -1,30 +1,48 @@
-.our-portfolio {
+.portfolio {
     display: flex;
     flex-wrap: wrap;
+
+    &__link {
+            text-decoration: none;
+            cursor: pointer;
+        }
 }
 
-.our-portfolio li:not(:nth-of-type(3n)) {
+.portfolio li:not(:nth-of-type(3n)) {
     margin-right: 30px;
-    &::not(:nth-last-child(-n + 3)) {
-            margin-bottom: 30px;
+ 
 }
-}
-
-
-.portfolio-link {
-    text-decoration: none;
-    cursor: pointer;
+.portfolio li:not(:nth-last-child(-n + 3)) {
+    margin-bottom: 30px;
 }
 
-.project-box {
+
+
+.project {
     padding: 20px 24px;
     border-bottom: 1px solid var(--border-box);
     border-right: 1px solid var(--border-box);
     border-left: 1px solid var(--border-box);
 
+    &__title {
+            font-weight: 700;
+            font-size: 18px;
+            line-height: 2;
+            letter-spacing: 0.06em;
+            color: var(--primary-text-color);
+            margin-bottom: 4px;
+        }
+
+        &__text {
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 1.88;
+            letter-spacing: 0.03em;
+            color: var(--title-text-color);
+        }
 }
 
-.our-portfolio-item {
+.portfolio__item {
     transition: box-shadow var(--time-distribution);
 
     &:hover {
@@ -34,32 +52,13 @@
 
 
 
-.our-portfolio-title {
-    font-weight: 700;
-    font-size: 18px;
-    line-height: 2;
-    letter-spacing: 0.06em;
-    color: var(--primary-text-color);
-    margin-bottom: 4px;
-}
-
-.our-portfolio-text {
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 1.88;
-    letter-spacing: 0.03em;
-    color: var(--title-text-color);
-}
-
-
-
-.project-description {
+.description {
     position: relative;
     overflow: hidden;
 
 }
 
-.project-description::before {
+.description::before {
     content: "";
     position: absolute;
     width: 100%;
@@ -70,15 +69,15 @@
 
     background-color: var(--bg-description);
 
-    .portfolio-link:hover &,
-        .portfolio-link:focus & {
+    .portfolio__link:hover &,
+        .portfolio__link:focus & {
             transform: translateY(0);
         }
 }
 
 
 
-.description {
+.description__text {
     position: absolute;
     top: 50%;
     left: 50%;
@@ -90,8 +89,8 @@
     line-height: 1.56em;
     color: var(--primary-bg-color);
 
-    .portfolio-link:hover &,
-        .portfolio-link:focus & {
+    .portfolio__link:hover &,
+        .portfolio__link:focus & {
             transform: translate(-50%, -50%);
         }
 

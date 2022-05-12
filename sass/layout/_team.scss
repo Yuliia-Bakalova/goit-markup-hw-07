@@ -1,6 +1,4 @@
-.section {
-    background-color: var(--buttons-bg-color);
-}
+
 
 .team {
 
@@ -19,11 +17,11 @@
 
 }
 
-.team li+li {
+.team__item--margin {
     margin-left: 30px;
 }
 
-.team__box {
+.box--padding {
     padding-top: 30px;
     padding-bottom: 30px;
 }
@@ -49,30 +47,5 @@
     margin-bottom: 16px;
 }
 
-.social {
-    display: flex;
-    justify-content: center;
-}
 
-.social li+li {
-    margin-left: 10px;
-}
-
-.social__link {
-    display: flex;
-    justify-content: center;
-    width: 44px;
-    height: 44px;
-    border-radius: 50%;
-    align-items: center;
-    fill: var(--social-color);
-
-    transition: fill var(--time-distribution), background-color var(--time-distribution);
-
-    &:hover,
-    &:focus {
-            background-color: #2196F3;
-            fill: var(--primary-bg-color);
-        }
-}
 

@@ -4,7 +4,7 @@
     text-align: center;
 }
 
-.clients li+li {
+.clients__item:not(:first-child) {
     margin-left: 30px;
 }
 
